@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char a[100] = "Hello ";
+    char b[] = "World";
+
+    strcat(a, b);
+    cout << "Combined string: " << a;
+    return 0;
+}
+
+Output:
+Combined string: Hello World
