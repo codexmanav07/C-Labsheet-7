@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char sentence[200] = "I ";
+    char word2[] = "love ";
+    char word3[] = "C++ ";
+    char word4[] = "programming.";
+
+    strcat(sentence, word2);
+    strcat(sentence, word3);
+    strcat(sentence, word4);
+
+    cout << sentence;
+    return 0;
+}
+
+Output:
+I love C++ programming.
