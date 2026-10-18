@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char first[100], last[50];
+
+    cout << "Enter first name: ";
+    cin >> first;
+    cout << "Enter last name: ";
+    cin >> last;
+
+    strcat(first, " ");
+    strcat(first, last);
+
+    cout << "Full name: " << first;
+    return 0;
+}
+
+Output:
+Enter first name: Rahul
+Enter last name: Sharma
+Full name: Rahul Sharma
