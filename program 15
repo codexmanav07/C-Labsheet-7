@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char mainStr[] = "Welcome to C++";
+    char subStr[] = "C++";
+
+    if (strstr(mainStr, subStr))
+        cout << "String is present";
+    else
+        cout << "String is not present";
+
+    return 0;
+}
+
+Output:
+String is present
