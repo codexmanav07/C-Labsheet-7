@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char str[] = "programming";
+    char *p = strrchr(str, 'g');
+
+    if (p)
+        cout << "Last occurrence at position "
+             << p - str + 1;
+    else
+        cout << "Character not found";
+
+    return 0;
+}
+
+Output:
+Last occurrence at position 10
